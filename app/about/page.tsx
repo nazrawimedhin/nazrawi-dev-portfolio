@@ -1,4 +1,4 @@
-export default function AboutPage() {
+export default function About() {
   const stats = [
     { label: "Happy Clients", value: "11+" },
     { label: "Projects Done", value: "13+" },
@@ -7,7 +7,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <section className="relative bg-[#0f172a] text-white py-20 overflow-hidden">
+    <section className="relative bg-[#0f172a] text-white py-10 overflow-hidden">
       {/* Heading */}
       <div className="justify-items-center">
         <div className="flex items-center gap-3 mb-6">
@@ -62,11 +62,6 @@ export default function AboutPage() {
           </button>
         </div>
       </div>
-
-      {/* Floating Decorative Dots */}
-      <div className="absolute top-20 left-10 w-4 h-4 bg-yellow-300 rounded-full"></div>
-      <div className="absolute bottom-20 left-40 w-4 h-4 bg-yellow-300 rounded-full"></div>
-      <div className="absolute top-32 right-1/3 w-3 h-3 bg-yellow-300 rounded-full"></div>
     </section>
   );
 }

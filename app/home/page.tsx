@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 
-export default function Hero() {
+export default function Home() {
   return (
-    <section className="bg-[#0f172a] text-white  min-h-screen flex items-center relative overflow-hidden">
+    <section className="bg-[#0f172a] text-white  min-h-screen flex items-center relative overflow-hidden pb-10">
       <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-16">
         {/* LEFT CONTENT */}
         <div className="max-w-xl space-y-6">
@@ -37,13 +37,17 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex gap-4 pt-4">
-            <button className="px-6 py-3 bg-gray-200 text-black rounded-md hover:bg-white transition">
-              About Me
-            </button>
+            <Link href="/about">
+              <button className="button px-6 py-3 bg-gray-200 text-black rounded-md hover:bg-white transition">
+                About Me
+              </button>
+            </Link>
 
-            <button className="px-6 py-3 bg-green-500 rounded-md hover:bg-green-600 transition">
-              Hire Me
-            </button>
+            <Link href="https://linkedin.com/in/nazrawimunea" target="_blank">
+              <button className="button px-6 py-3 bg-green-500 text-white rounded-md hover:bg-green-600 transition">
+                Hire Me
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -51,16 +55,16 @@ export default function Hero() {
 
         <div>
           <div className="flex space-x-12 pb-8">
-            <Link href="/about" className="text-green-600 font-semibold">
+            <Link href="/about" className="text-green-400 font-bold">
               About
             </Link>
-            <Link href="/projects" className="text-green-600 font-semibold">
+            <Link href="/projects" className="text-green-400 font-bold">
               Projects
             </Link>
-            <Link href="/skills" className="text-green-600 font-semibold">
+            <Link href="/skills" className="text-green-400 font-bold">
               Skills
             </Link>
-            <Link href="/contact" className="text-green-600 font-semibold">
+            <Link href="/contact" className="text-green-400 font-bold">
               Contact
             </Link>
           </div>
@@ -78,9 +82,15 @@ export default function Hero() {
 
             {/* Social Icons */}
             <div className="absolute right-[-90px] flex flex-col gap-6">
-              <SocialIcon icon={<FaLinkedinIn />} />
-              <SocialIcon icon={<FaGithub />} />
-              <SocialIcon icon={<FaTwitter />} />
+              <Link href="https://linkedin.com/in/nazrawimunea" target="_blank">
+                <SocialIcon icon={<FaLinkedinIn />} />
+              </Link>
+              <Link href="https://github.com/nazrawimedhin" target="_blank">
+                <SocialIcon icon={<FaGithub />} />
+              </Link>
+              <Link href="https://twitter.com/@MedhinNazrawi" target="_blank">
+                <SocialIcon icon={<FaTwitter />} />
+              </Link>
             </div>
           </div>
         </div>

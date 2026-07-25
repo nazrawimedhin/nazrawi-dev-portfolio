@@ -100,7 +100,7 @@ export default function Home() {
 }
 
 /* Reusable Social Button */
-function SocialIcon({ icon }) {
+function SocialIcon({ icon: icon }: { icon: React.ReactNode }) {
   return (
     <div className="w-12 h-12 border border-gray-400 rounded-full flex items-center justify-center text-gray-300 hover:bg-white hover:text-black transition cursor-pointer">
       {icon}

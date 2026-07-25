@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { BsJavascript, BsTypescript } from "react-icons/bs";
 import { DiPhotoshop } from "react-icons/di";
 import { FaCss3, FaFigma, FaHtml5, FaReact } from "react-icons/fa";
@@ -109,15 +110,20 @@ export default function Skills() {
             performance through code splitting.
           </p>
 
-          <button className="px-6 py-3 border border-green-400 text-green-400 rounded-md hover:bg-green-400 hover:text-black transition">
-            Hire Me
-          </button>
+          <Link
+            href="https://www.linkedin.com/in/nazrawimunea/"
+            target="_blank"
+          >
+            <button className="px-6 py-3 border border-green-400 text-green-400 rounded-md hover:bg-green-400 hover:text-black transition">
+              Hire Me
+            </button>
+          </Link>
         </div>
 
         {/* RIGHT SIDE */}
         <div className="space-y-10">
           <div>
-            <p className="pt-12 font-bold text-green-400">Languages</p>
+            <p className="pt-12 font-bold text-green-400 text-lg">Languages</p>
             <div className="text-white py-4">
               <div className="max-w-5xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 place-items-center">
@@ -150,7 +156,7 @@ export default function Skills() {
               </div>
             </div>
 
-            <p className="font-bold text-green-400">Libraries</p>
+            <p className="font-bold text-green-400 text-lg">Libraries</p>
             <div className="text-white py-4">
               <div className="max-w-5xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 place-items-center">
@@ -183,7 +189,7 @@ export default function Skills() {
               </div>
             </div>
 
-            <p className="font-bold text-green-400">Design Tools</p>
+            <p className="font-bold text-green-400 text-lg">Design Tools</p>
             <div className="text-white py-4">
               <div className="max-w-5xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 place-items-center">

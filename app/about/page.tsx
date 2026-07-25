@@ -43,10 +43,10 @@ export default function About() {
         <div className="max-w-lg space-y-6">
           <div>
             <h2 className="text-4xl font-bold leading-snug text-green-400">
-              Fullstack developer and
+              Frontend Developer and
             </h2>
             <h2 className="text-4xl font-bold leading-snug text-green-400">
-              AWS Engineer
+              Web Designer
             </h2>
           </div>
 

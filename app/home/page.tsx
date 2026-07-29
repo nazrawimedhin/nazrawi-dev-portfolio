@@ -6,7 +6,7 @@ import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <section className="bg-[#0f172a] text-white  min-h-screen flex items-center relative overflow-hidden pb-10">
+    <section className="bg-[#0f172a] text-white min-h-screen flex items-center relative overflow-hidden pb-10">
       <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-16">
         {/* LEFT CONTENT */}
         <div className="max-w-xl space-y-6">
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* RIGHT IMAGE */}
+        {/* RIGHT SIDE */}
 
         <div>
           <div className="flex space-x-12 pb-8">
@@ -81,7 +81,7 @@ export default function Home() {
             </div>
 
             {/* Social Icons */}
-            <div className="absolute right-[-90px] flex flex-col gap-6">
+            <div className="absolute right-[-60px] flex flex-col gap-6">
               <Link href="https://linkedin.com/in/nazrawimunea" target="_blank">
                 <SocialIcon icon={<FaLinkedinIn />} />
               </Link>
@@ -102,7 +102,7 @@ export default function Home() {
 /* Reusable Social Button */
 function SocialIcon({ icon: icon }: { icon: React.ReactNode }) {
   return (
-    <div className="w-12 h-12 border border-gray-400 rounded-full flex items-center justify-center text-gray-300 hover:bg-white hover:text-black transition cursor-pointer">
+    <div className="w-10 h-10 border border-gray-400 rounded-full flex items-center justify-center text-gray-300 hover:bg-white hover:text-black transition cursor-pointer">
       {icon}
     </div>
   );

@@ -74,7 +74,7 @@ export default function Home() {
 
           <div className="relative flex items-center justify-center gap-8 mt-8">
             {/* Profile Image */}
-            <div className="relative w-80 h-80 overflow-hidden">
+            <div className="relative w-70 h-70 overflow-hidden">
               <Image
                 src="/assets/profile.png"
                 alt="profile"

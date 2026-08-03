@@ -7,11 +7,11 @@ import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 export default function Home() {
   return (
     <section className="bg-[#0f172a] text-white min-h-screen flex items-center relative overflow-hidden pb-10">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-16">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-24">
         {/* LEFT CONTENT */}
         <div className="max-w-xl space-y-6">
           <Image
-            className="w-40 h-auto pb-15"
+            className="w-40 h-auto pb-15 pt-20"
             src="/assets/profile-icon-2-no-bg.png"
             width={45}
             height={45}
@@ -23,16 +23,22 @@ export default function Home() {
             <div className="w-10 h-[2px] bg-white"></div>
             <div className="w-4 h-[2px] bg-white"></div>
             <div className="w-2 h-2 bg-white rounded-full"></div>
-            <p className="text-gray-300 font-medium">Welcome to my portfolio</p>
+            <p className="text-gray-300 font-medium">Nazrawi's dev portfolio</p>
           </div>
 
           {/* Name */}
           <h1 className="text-5xl font-bold">Nazrawi Munea</h1>
 
           {/* Description */}
-          <p className="text-gray-400 leading-relaxed">
-            A Front-End Web Developer with good knowledge of web technologies
-            and a decent amount of experience in developing web applications.
+          <p className="text-gray-400 leading-relaxed flex">
+            Frontend Developer building fast, accessible, production-ready web
+            experiences.
+          </p>
+
+          {/* Technologies */}
+          <p className="text-gray-400 font-bold leading-relaxed text-sm/12">
+            REACT.JS · NEXT.JS · TYPESCRIPT · MANTINE UI <br />
+            MATERIAL UI · TAILWIND CSS · BULMA CSS
           </p>
 
           {/* Buttons */}
@@ -64,9 +70,6 @@ export default function Home() {
             <Link href="/skills" className="text-green-400 font-bold">
               Skills
             </Link>
-            <Link href="/contact" className="text-green-400 font-bold">
-              Contact
-            </Link>
           </div>
 
           <div className="relative flex items-center justify-center gap-8 mt-8">
@@ -81,7 +84,7 @@ export default function Home() {
             </div>
 
             {/* Social Icons */}
-            <div className="absolute right-[-60px] flex flex-col gap-6">
+            <div className="absolute right-[-30px] flex flex-col gap-6">
               <Link href="https://linkedin.com/in/nazrawimunea" target="_blank">
                 <SocialIcon icon={<FaLinkedinIn />} />
               </Link>

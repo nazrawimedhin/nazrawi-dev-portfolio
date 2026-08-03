@@ -126,7 +126,7 @@ export default function Skills() {
             <p className="pt-12 font-bold text-green-400 text-lg">Languages</p>
             <div className="text-white py-4">
               <div className="max-w-5xl mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 place-items-center">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 place-items-center">
                   {languages.map((skill, i) => (
                     <div
                       key={i}
@@ -159,7 +159,7 @@ export default function Skills() {
             <p className="font-bold text-green-400 text-lg">Libraries</p>
             <div className="text-white py-4">
               <div className="max-w-5xl mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 place-items-center">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 place-items-center">
                   {libraries.map((skill, i) => (
                     <div
                       key={i}
@@ -192,7 +192,7 @@ export default function Skills() {
             <p className="font-bold text-green-400 text-lg">Design Tools</p>
             <div className="text-white py-4">
               <div className="max-w-5xl mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 place-items-center">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 place-items-center">
                   {design_tools.map((skill, i) => (
                     <div
                       key={i}

@@ -55,9 +55,9 @@ export default function Experience() {
         </div>
 
         {/* CONTENT */}
-        <div className="grid grid-cols-2 gap-24 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-24 max-w-5xl mx-auto">
           {/* LEFT IMAGE */}
-          <div className="relative w-[400] h-[500] rounded-xl overflow-hidden shadow-2xl">
+          <div className="relative md:w-[400] md:h-[500] w-[300] h-[400] rounded-xl shadow-2xl justify-center items-center overflow-hidden mx-auto">
             <Image
               src="/assets/resume.png"
               alt="resume"
